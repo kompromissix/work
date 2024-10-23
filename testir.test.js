@@ -8,4 +8,8 @@ test('Проверочка', () => {
     expect(Daysfunction(5)).toBe('Пятница');
     expect(Daysfunction(6)).toBe('Суббота');
     expect(Daysfunction(7)).toBe('Воскресенье');
+    expect(Daysfunction).toThrow();
+    expect(Daysfunction).toThrow(Error);
+    expect(Daysfunction).toThrow('some error');
+    expect(Daysfunction).toThrow(/some/);
 });
